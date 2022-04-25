@@ -8,13 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
 
     
-    @IBOutlet weak var parkingImage: UIView!
+    let parkingView = SquareMainPageView()
     
     @IBOutlet weak var entrancesImage: UIView!
     
@@ -33,6 +35,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var regionUpdates: UIView!
     
     
+    func setUpViews()
+    {
+        parkingView.setImage(named: "Parking")
+        parkingView.setLabel(text: "Parking Available")
+    }
     
 }
 
