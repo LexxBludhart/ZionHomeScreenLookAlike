@@ -21,49 +21,54 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="p7v-f9-9DB"/>
-                                    <tabBarItem title="Item" id="6wf-8c-ySq"/>
-                                    <tabBarItem title="Item" id="lCy-v4-zZA"/>
-                                    <tabBarItem systemItem="more" id="T5D-LI-G4u"/>
+                                    <tabBarItem title="Home" image="house.fill" catalog="system" id="p7v-f9-9DB"/>
+                                    <tabBarItem title="Map" image="map" catalog="system" id="6wf-8c-ySq"/>
+                                    <tabBarItem title="Plan" image="pencil" catalog="system" id="lCy-v4-zZA"/>
+                                    <tabBarItem title="Settings" image="gearshape.fill" catalog="system" id="T5D-LI-G4u"/>
                                 </items>
                             </tabBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Wg-1a-FSH">
-                                <rect key="frame" x="20" y="180" width="189" height="194"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KRB-kM-jBB" customClass="SquareView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
+                                <rect key="frame" x="209" y="167" width="185" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSi-vl-qMU">
+                                <rect key="frame" x="209" y="265" width="185" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QaN-vf-WkO">
+                                <rect key="frame" x="209" y="363" width="185" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="561-kk-je0">
+                                <rect key="frame" x="209" y="461" width="185" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cVc-DN-871">
+                                <rect key="frame" x="209" y="559" width="185" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z0c-9T-pZl">
+                                <rect key="frame" x="209" y="657" width="185" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FkD-Hf-cNH">
+                                <rect key="frame" x="20" y="167" width="181" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kDt-rf-DNg">
-                                <rect key="frame" x="224" y="281" width="170" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ckR-v1-exZ">
-                                <rect key="frame" x="224" y="382" width="170" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xpu-K9-9lp">
-                                <rect key="frame" x="224" y="483" width="170" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Acb-HH-lRv">
-                                <rect key="frame" x="224" y="584" width="170" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lx8-Bz-qVb">
-                                <rect key="frame" x="224" y="685" width="170" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfw-gr-KKu" customClass="ZionMainPageImage" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
-                                <rect key="frame" x="20" y="382" width="189" height="194"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIO-te-nEy">
+                                <rect key="frame" x="20" y="363" width="181" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nrj-YH-l1C">
-                                <rect key="frame" x="20" y="584" width="189" height="194"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aTn-rB-CsL">
+                                <rect key="frame" x="20" y="559" width="181" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
@@ -72,14 +77,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="campingImage" destination="Acb-HH-lRv" id="qlK-wT-EPe"/>
-                        <outlet property="entrancesImage" destination="kDt-rf-DNg" id="4nd-dX-mhO"/>
-                        <outlet property="regionUpdates" destination="nrj-YH-l1C" id="5CC-YR-aYp"/>
-                        <outlet property="shuttlesImage" destination="xpu-K9-9lp" id="Z9J-gB-zga"/>
-                        <outlet property="trailsImage" destination="ckR-v1-exZ" id="8vs-NS-OpB"/>
-                        <outlet property="weatherImage" destination="Lx8-Bz-qVb" id="r4W-EX-f8d"/>
-                        <outlet property="whatToDoImage" destination="kfw-gr-KKu" id="hs4-pZ-e3e"/>
-                        <outlet property="whatToSeeImage" destination="1Wg-1a-FSH" id="oCo-Xz-BBQ"/>
+                        <outlet property="parkingImage" destination="KRB-kM-jBB" id="Vlj-Mu-qYN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,6 +86,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

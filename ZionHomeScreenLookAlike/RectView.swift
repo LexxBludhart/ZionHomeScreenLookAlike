@@ -7,10 +7,10 @@
 
 import UIKit
 
-class SquareMainPageView: UIView
+class RectView: UIView
 {
-
-    lazy var squareBackgroundImage: UIImageView =
+    
+    private lazy var squareBackgroundImage: UIImageView =
     {
         let squareBackgroundImage = UIImageView()
         squareBackgroundImage.clipsToBounds = true
@@ -19,43 +19,33 @@ class SquareMainPageView: UIView
         return squareBackgroundImage
     }()
     
-    lazy var squareLabel: UILabel =
+    private lazy var squareLabel: UILabel =
     {
-       let label = UILabel()
+        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
-        label.text = "Test"
         return label
     }()
     
     override init(frame: CGRect)
     {
         super.init(frame: frame)
+        self.superview?.addSubview(self)
+        setup()
     }
     
     required init?(coder: NSCoder)
     {
         super.init(coder: coder)
-    }
-    
-    func setImage(named imageName: String)
-    {
-        self.squareBackgroundImage.image = UIImage(named: imageName)
-    }
-    
-    func setLabel(text textToDisplay: String?)
-    {
-        self.squareLabel.text = textToDisplay
+        self.superview?.addSubview(self)
+        setup()
     }
     
     func setup()
     {
-        self.addSubview(squareBackgroundImage)
-        self.addSubview(squareLabel)
+        addSubview(squareBackgroundImage)
+        addSubview(squareLabel)
         addSquareConstraints()
-        
-        
-        
         isHidden = false
     }
     
@@ -76,9 +66,12 @@ class SquareMainPageView: UIView
         NSLayoutConstraint.activate(constraints)
     }
     
+    func setImageAndLabel(imageName: String, labelText: String)
+    {
+        squareBackgroundImage.image = UIImage(named: imageName)
+        squareLabel.text = labelText
     
-    
-    
+    }
     
     
     

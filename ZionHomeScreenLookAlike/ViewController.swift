@@ -11,12 +11,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        setUpViews()
     }
 
     
-    let parkingView = SquareMainPageView()
+    @IBOutlet weak var parkingImage: RectView!
     
     @IBOutlet weak var entrancesImage: UIView!
     
@@ -37,8 +36,7 @@ class ViewController: UIViewController {
     
     func setUpViews()
     {
-        parkingView.setImage(named: "Parking")
-        parkingView.setLabel(text: "Parking Available")
+        parkingImage.setImageAndLabel(imageName: "ParkingImage", labelText: "Parking")
     }
     
 }

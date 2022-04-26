@@ -13,7 +13,8 @@
 		4F5C1DE12804900500D77922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5C1DDF2804900500D77922 /* Main.storyboard */; };
 		4F5C1DE32804900600D77922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F5C1DE22804900600D77922 /* Assets.xcassets */; };
 		4F5C1DE62804900600D77922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5C1DE42804900600D77922 /* LaunchScreen.storyboard */; };
-		4FF8CD962805D94B007A6E5B /* ZionMainPageImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8CD952805D94B007A6E5B /* ZionMainPageImage.swift */; };
+		4FA3243D28184983000872B3 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3243C28184983000872B3 /* SquareView.swift */; };
+		4FF8CD962805D94B007A6E5B /* RectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8CD952805D94B007A6E5B /* RectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		4F5C1DE22804900600D77922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F5C1DE52804900600D77922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F5C1DE72804900600D77922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FF8CD952805D94B007A6E5B /* ZionMainPageImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZionMainPageImage.swift; sourceTree = "<group>"; };
+		4FA3243C28184983000872B3 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
+		4FF8CD952805D94B007A6E5B /* RectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 		4F5C1DD82804900500D77922 /* ZionHomeScreenLookAlike */ = {
 			isa = PBXGroup;
 			children = (
-				4FF8CD952805D94B007A6E5B /* ZionMainPageImage.swift */,
+				4FF8CD952805D94B007A6E5B /* RectView.swift */,
+				4FA3243C28184983000872B3 /* SquareView.swift */,
 				4F5C1DD92804900500D77922 /* AppDelegate.swift */,
 				4F5C1DDB2804900500D77922 /* SceneDelegate.swift */,
 				4F5C1DDD2804900500D77922 /* ViewController.swift */,
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA3243D28184983000872B3 /* SquareView.swift in Sources */,
 				4F5C1DDE2804900500D77922 /* ViewController.swift in Sources */,
 				4F5C1DDA2804900500D77922 /* AppDelegate.swift in Sources */,
 				4F5C1DDC2804900500D77922 /* SceneDelegate.swift in Sources */,
-				4FF8CD962805D94B007A6E5B /* ZionMainPageImage.swift in Sources */,
+				4FF8CD962805D94B007A6E5B /* RectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
