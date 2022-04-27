@@ -11,47 +11,73 @@ class SquareView: UIView {
 
     
      
+    private lazy var squareBackgroundImage: UIImageView =
+    {
+        let squareBackgroundImage = UIImageView()
+        squareBackgroundImage.clipsToBounds = true
+        squareBackgroundImage.translatesAutoresizingMaskIntoConstraints = false
+        squareBackgroundImage.backgroundColor = .black
+        squareBackgroundImage.layer.opacity = 0.9
+        return squareBackgroundImage
+    }()
+    
+    private lazy var squareLabel: UILabel =
+    {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        label.font = .systemFont(ofSize: 20, weight: .black)
+        
+        return label
+    }()
+    
     override init(frame: CGRect)
     {
         super.init(frame: frame)
-        createSubViews()
-    }
-    
-    init (labelText: String)
-    {
-        super.init(frame: .zero)
-        createSubViews()
+        self.superview?.addSubview(self)
+        setup()
     }
     
     required init?(coder: NSCoder)
     {
         super.init(coder: coder)
-        createSubViews()
+        self.superview?.addSubview(self)
+        setup()
     }
     
-    private func createSubViews()
+    func setup()
     {
-        let rectImage = UIImageView()
-        rectImage.image = UIImage(named: "Parking")
-        rectImage.translatesAutoresizingMaskIntoConstraints = false
-        rectImage.clipsToBounds = true
-        rectImage.layer.cornerRadius = 1
-        addSubview(rectImage)
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.medium)
-        label.text = "Parking? Test?"
-        label.textColor = .black
-        addSubview(label)
-        NSLayoutConstraint.activate([
-            rectImage.centerXAnchor.constraint(equalTo: centerXAnchor),
-            rectImage.centerYAnchor.constraint(equalTo: centerYAnchor),
-            label.centerXAnchor.constraint(equalTo: centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: centerYAnchor)
-        ])
+        addSubview(squareBackgroundImage)
+        addSubview(squareLabel)
+        addSquareConstraints()
+        isHidden = false
+    }
+    
+    func addSquareConstraints()
+    {
+        let margins = layoutMarginsGuide
+        var constraints = [NSLayoutConstraint]()
         
+        constraints.append(squareBackgroundImage.leadingAnchor.constraint(
+            equalTo: margins.leadingAnchor, constant: -7))
+        constraints.append(squareBackgroundImage.trailingAnchor.constraint(
+            equalTo: margins.trailingAnchor, constant: 7))
+        constraints.append(squareBackgroundImage.topAnchor.constraint(
+            equalTo: margins.topAnchor, constant: -7))
+        constraints.append(squareBackgroundImage.bottomAnchor.constraint(
+            equalTo: margins.bottomAnchor, constant: 7))
         
+        constraints.append(squareLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: -3))
+        constraints.append(squareLabel.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: 5))
+        
+        NSLayoutConstraint.activate(constraints)
+    }
+    
+    func setImageAndLabel(imageName: String, labelText: String)
+    {
+        squareBackgroundImage.image = UIImage(named: imageName)
+        squareLabel.text = labelText
+    
     }
 
 }
