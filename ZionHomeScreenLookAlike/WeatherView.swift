@@ -30,7 +30,7 @@ class WeatherView: UIView {
         return label
     }()
     
-    lazy var weatherLiveImage: UIImageView =
+    private lazy var weatherLiveImage: UIImageView =
     {
         let liveImage = UIImageView()
         liveImage.clipsToBounds = true
@@ -41,7 +41,7 @@ class WeatherView: UIView {
         return liveImage
     }()
     
-    lazy var weatherIconImage: UIImageView =
+    private lazy var weatherIconImage: UIImageView =
     {
        let weatherIcon = UIImageView()
         weatherIcon.clipsToBounds = true
@@ -81,7 +81,7 @@ class WeatherView: UIView {
         let margins = layoutMarginsGuide
         var constraints = [NSLayoutConstraint]()
         
-        // Back Ground Image
+        // Background Image
         constraints.append(weatherBackgroundImage.leadingAnchor.constraint(
             equalTo: margins.leadingAnchor, constant: -7))
         constraints.append(weatherBackgroundImage.trailingAnchor.constraint(

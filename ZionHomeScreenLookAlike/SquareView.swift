@@ -17,7 +17,7 @@ class SquareView: UIView {
         squareBackgroundImage.clipsToBounds = true
         squareBackgroundImage.translatesAutoresizingMaskIntoConstraints = false
         squareBackgroundImage.backgroundColor = .black
-        squareBackgroundImage.layer.opacity = 0.9
+        squareBackgroundImage.layer.opacity = 0.8
         return squareBackgroundImage
     }()
     
@@ -45,7 +45,7 @@ class SquareView: UIView {
         setup()
     }
     
-    func setup()
+    private func setup()
     {
         addSubview(squareBackgroundImage)
         addSubview(squareLabel)
@@ -53,11 +53,12 @@ class SquareView: UIView {
         isHidden = false
     }
     
-    func addSquareConstraints()
+    private func addSquareConstraints()
     {
         let margins = layoutMarginsGuide
         var constraints = [NSLayoutConstraint]()
         
+        // Background Image
         constraints.append(squareBackgroundImage.leadingAnchor.constraint(
             equalTo: margins.leadingAnchor, constant: -7))
         constraints.append(squareBackgroundImage.trailingAnchor.constraint(
@@ -67,6 +68,7 @@ class SquareView: UIView {
         constraints.append(squareBackgroundImage.bottomAnchor.constraint(
             equalTo: margins.bottomAnchor, constant: 7))
         
+        // Label
         constraints.append(squareLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: -3))
         constraints.append(squareLabel.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: 5))
         

@@ -59,6 +59,7 @@ class HeaderView: UIView {
         let margins = layoutMarginsGuide
         var constraints = [NSLayoutConstraint]()
         
+        // Background Image
         constraints.append(headerBackgroundImage.leadingAnchor.constraint(
             equalTo: margins.leadingAnchor, constant: -7))
         constraints.append(headerBackgroundImage.trailingAnchor.constraint(
@@ -68,6 +69,7 @@ class HeaderView: UIView {
         constraints.append(headerBackgroundImage.bottomAnchor.constraint(
             equalTo: margins.bottomAnchor, constant: 7))
         
+        // Label
         constraints.append(headerLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: -3))
         constraints.append(headerLabel.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: 5))
         

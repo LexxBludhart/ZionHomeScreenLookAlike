@@ -15,9 +15,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="go2-5l-we0">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QoK-qU-mSc">
+                                <rect key="frame" x="20" y="154" width="374" height="628"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nIM-ws-wyH">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="204"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FkD-Hf-cNH" customClass="SquareView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="204"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RV7-Ef-Peh">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="204"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRB-kM-jBB" customClass="RectView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="98"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSi-vl-qMU" customClass="RectView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="106" width="183" height="98"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6Lr-92-FDZ">
+                                        <rect key="frame" x="0.0" y="212" width="374" height="204"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIO-te-nEy" customClass="SquareView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="204"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FMT-aB-Uin">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="204"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaN-vf-WkO" customClass="RectView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="98"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="561-kk-je0" customClass="RectView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="106" width="183" height="98"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SNf-5N-oI2">
+                                        <rect key="frame" x="0.0" y="424" width="374" height="204"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTn-rB-CsL" customClass="SquareView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="204"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vGc-cU-v2U">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="204"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVc-DN-871" customClass="RectView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="98"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0c-9T-pZl" customClass="WeatherView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="106" width="183" height="98"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8PM-OP-6qc" customClass="HeaderView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-82" width="414" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="go2-5l-we0">
+                                <rect key="frame" x="0.0" y="779" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem title="Home" image="house.fill" catalog="system" id="p7v-f9-9DB"/>
@@ -27,59 +102,20 @@
                                 </items>
                                 <color key="selectedImageTintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KRB-kM-jBB" customClass="RectView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
-                                <rect key="frame" x="209" y="167" width="185" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSi-vl-qMU" customClass="RectView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
-                                <rect key="frame" x="209" y="265" width="185" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QaN-vf-WkO" customClass="RectView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
-                                <rect key="frame" x="209" y="363" width="185" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="561-kk-je0" customClass="RectView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
-                                <rect key="frame" x="209" y="461" width="185" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cVc-DN-871" customClass="RectView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
-                                <rect key="frame" x="209" y="559" width="185" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z0c-9T-pZl" customClass="WeatherView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
-                                <rect key="frame" x="209" y="657" width="185" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FkD-Hf-cNH" customClass="SquareView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
-                                <rect key="frame" x="20" y="167" width="181" height="188"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIO-te-nEy" customClass="SquareView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
-                                <rect key="frame" x="20" y="363" width="181" height="188"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aTn-rB-CsL" customClass="SquareView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
-                                <rect key="frame" x="20" y="559" width="181" height="188"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8PM-OP-6qc" customClass="HeaderView" customModule="ZionHomeScreenLookAlike" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="-76" width="414" height="235"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QoK-qU-mSc" secondAttribute="bottom" constant="80" id="3TC-qu-uhD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QoK-qU-mSc" secondAttribute="trailing" constant="20" id="DOX-OW-JkE"/>
+                            <constraint firstItem="QoK-qU-mSc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kxi-zz-VUX"/>
+                            <constraint firstItem="go2-5l-we0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TTG-xn-yPE"/>
+                            <constraint firstItem="QoK-qU-mSc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="UTf-wX-hz1"/>
+                            <constraint firstItem="go2-5l-we0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XRv-Cf-XlV"/>
+                            <constraint firstItem="QoK-qU-mSc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZLd-YB-IYv"/>
+                            <constraint firstItem="go2-5l-we0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jZP-FW-pjq"/>
+                            <constraint firstItem="go2-5l-we0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wZu-Km-zuA"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="campingImage" destination="cVc-DN-871" id="V30-3P-a1h"/>
