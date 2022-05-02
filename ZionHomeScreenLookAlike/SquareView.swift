@@ -27,7 +27,9 @@ class SquareView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
         label.font = .systemFont(ofSize: 20, weight: .black)
-        
+        label.shadowColor = .black
+        label.shadowOffset.height = 2
+        label.shadowOffset.width = 2
         return label
     }()
     

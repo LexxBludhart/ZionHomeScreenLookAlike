@@ -15,7 +15,7 @@ class WeatherView: UIView {
         weatherBackgroundImage.clipsToBounds = true
         weatherBackgroundImage.translatesAutoresizingMaskIntoConstraints = false
         weatherBackgroundImage.backgroundColor = UIColor.black
-        weatherBackgroundImage.layer.opacity = 0.8
+        weatherBackgroundImage.layer.opacity = 1
     
         return weatherBackgroundImage
     }()
@@ -26,6 +26,9 @@ class WeatherView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
         label.font = .systemFont(ofSize: 20, weight: .black)
+        label.shadowColor = .black
+        label.shadowOffset.height = 2
+        label.shadowOffset.width = 2
         
         return label
     }()

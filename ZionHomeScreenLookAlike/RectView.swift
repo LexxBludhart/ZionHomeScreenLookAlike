@@ -16,7 +16,7 @@ class RectView: UIView
         rectBackgroundImage.clipsToBounds = true
         rectBackgroundImage.translatesAutoresizingMaskIntoConstraints = false
         rectBackgroundImage.backgroundColor = UIColor.black
-        rectBackgroundImage.layer.opacity = 0.8
+        rectBackgroundImage.layer.opacity = 1
     
         return rectBackgroundImage
     }()
@@ -27,6 +27,9 @@ class RectView: UIView
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
         label.font = .systemFont(ofSize: 20, weight: .black)
+        label.shadowColor = .black
+        label.shadowOffset.height = 2
+        label.shadowOffset.width = 2
         
         return label
     }()
